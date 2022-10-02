@@ -6,10 +6,6 @@
 	objectVersion = 56;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		4124ED6F28EA414B00E11E46 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4124ED6E28EA414B00E11E46 /* main.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		4124ED6928EA414B00E11E46 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -24,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		4124ED6B28EA414B00E11E46 /* MAD3004_TeamMaple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004_TeamMaple; sourceTree = BUILT_PRODUCTS_DIR; };
-		4124ED6E28EA414B00E11E46 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +52,6 @@
 		4124ED6D28EA414B00E11E46 /* MAD3004_TeamMaple */ = {
 			isa = PBXGroup;
 			children = (
-				4124ED6E28EA414B00E11E46 /* main.swift */,
 			);
 			path = MAD3004_TeamMaple;
 			sourceTree = "<group>";
@@ -120,7 +114,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4124ED6F28EA414B00E11E46 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
