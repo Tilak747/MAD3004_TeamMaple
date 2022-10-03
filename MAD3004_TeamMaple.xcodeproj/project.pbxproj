@@ -6,6 +6,18 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		41C8C23E28EA62D400EC0D0A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C23D28EA62D400EC0D0A /* Employee.swift */; };
+		41C8C24028EA62F400EC0D0A /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C23F28EA62F400EC0D0A /* Vehicle.swift */; };
+		41C8C24228EA639500EC0D0A /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24128EA639500EC0D0A /* Tester.swift */; };
+		41C8C24428EA63A400EC0D0A /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24328EA63A400EC0D0A /* Manager.swift */; };
+		41C8C24628EA63B000EC0D0A /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24528EA63B000EC0D0A /* Programmer.swift */; };
+		41C8C24828EA63BA00EC0D0A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24728EA63BA00EC0D0A /* Car.swift */; };
+		41C8C24A28EA63CC00EC0D0A /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24928EA63CC00EC0D0A /* Motorcycle.swift */; };
+		41C8C24C28EA63D600EC0D0A /* Temporary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24B28EA63D600EC0D0A /* Temporary.swift */; };
+		41C8C24E28EA63F400EC0D0A /* Permanent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24D28EA63F400EC0D0A /* Permanent.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		4124ED6928EA414B00E11E46 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -21,6 +33,15 @@
 /* Begin PBXFileReference section */
 		4124ED6B28EA414B00E11E46 /* MAD3004_TeamMaple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004_TeamMaple; sourceTree = BUILT_PRODUCTS_DIR; };
 		41C8C23728EA60EC00EC0D0A /* Test Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Test Files"; sourceTree = "<group>"; };
+		41C8C23D28EA62D400EC0D0A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		41C8C23F28EA62F400EC0D0A /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		41C8C24128EA639500EC0D0A /* Tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
+		41C8C24328EA63A400EC0D0A /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		41C8C24528EA63B000EC0D0A /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
+		41C8C24728EA63BA00EC0D0A /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		41C8C24928EA63CC00EC0D0A /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		41C8C24B28EA63D600EC0D0A /* Temporary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary.swift; sourceTree = "<group>"; };
+		41C8C24D28EA63F400EC0D0A /* Permanent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permanent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +93,10 @@
 		41C8C23928EA612A00EC0D0A /* Part 1 */ = {
 			isa = PBXGroup;
 			children = (
+				41C8C23D28EA62D400EC0D0A /* Employee.swift */,
+				41C8C24128EA639500EC0D0A /* Tester.swift */,
+				41C8C24328EA63A400EC0D0A /* Manager.swift */,
+				41C8C24528EA63B000EC0D0A /* Programmer.swift */,
 			);
 			path = "Part 1";
 			sourceTree = "<group>";
@@ -79,6 +104,9 @@
 		41C8C23A28EA616900EC0D0A /* Part 2 */ = {
 			isa = PBXGroup;
 			children = (
+				41C8C23F28EA62F400EC0D0A /* Vehicle.swift */,
+				41C8C24728EA63BA00EC0D0A /* Car.swift */,
+				41C8C24928EA63CC00EC0D0A /* Motorcycle.swift */,
 			);
 			path = "Part 2";
 			sourceTree = "<group>";
@@ -86,6 +114,8 @@
 		41C8C23B28EA616E00EC0D0A /* Part 3 */ = {
 			isa = PBXGroup;
 			children = (
+				41C8C24B28EA63D600EC0D0A /* Temporary.swift */,
+				41C8C24D28EA63F400EC0D0A /* Permanent.swift */,
 			);
 			path = "Part 3";
 			sourceTree = "<group>";
@@ -122,6 +152,7 @@
 				TargetAttributes = {
 					4124ED6A28EA414B00E11E46 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -148,6 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C8C24228EA639500EC0D0A /* Tester.swift in Sources */,
+				41C8C24628EA63B000EC0D0A /* Programmer.swift in Sources */,
+				41C8C24828EA63BA00EC0D0A /* Car.swift in Sources */,
+				41C8C24028EA62F400EC0D0A /* Vehicle.swift in Sources */,
+				41C8C23E28EA62D400EC0D0A /* Employee.swift in Sources */,
+				41C8C24C28EA63D600EC0D0A /* Temporary.swift in Sources */,
+				41C8C24428EA63A400EC0D0A /* Manager.swift in Sources */,
+				41C8C24A28EA63CC00EC0D0A /* Motorcycle.swift in Sources */,
+				41C8C24E28EA63F400EC0D0A /* Permanent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +310,17 @@
 		4124ED7328EA414B00E11E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BS25YS4LM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -281,9 +328,15 @@
 		4124ED7428EA414B00E11E46 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BS25YS4LM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
