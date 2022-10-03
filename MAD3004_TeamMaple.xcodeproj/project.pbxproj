@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		4124ED6B28EA414B00E11E46 /* MAD3004_TeamMaple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004_TeamMaple; sourceTree = BUILT_PRODUCTS_DIR; };
+		41C8C23728EA60EC00EC0D0A /* Test Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Test Files"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +53,41 @@
 		4124ED6D28EA414B00E11E46 /* MAD3004_TeamMaple */ = {
 			isa = PBXGroup;
 			children = (
+				41C8C23828EA611D00EC0D0A /* Work Space */,
+				41C8C23728EA60EC00EC0D0A /* Test Files */,
 			);
 			path = MAD3004_TeamMaple;
+			sourceTree = "<group>";
+		};
+		41C8C23828EA611D00EC0D0A /* Work Space */ = {
+			isa = PBXGroup;
+			children = (
+				41C8C23B28EA616E00EC0D0A /* Part 3 */,
+				41C8C23A28EA616900EC0D0A /* Part 2 */,
+				41C8C23928EA612A00EC0D0A /* Part 1 */,
+			);
+			path = "Work Space";
+			sourceTree = "<group>";
+		};
+		41C8C23928EA612A00EC0D0A /* Part 1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Part 1";
+			sourceTree = "<group>";
+		};
+		41C8C23A28EA616900EC0D0A /* Part 2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Part 2";
+			sourceTree = "<group>";
+		};
+		41C8C23B28EA616E00EC0D0A /* Part 3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Part 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
