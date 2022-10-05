@@ -24,9 +24,11 @@ class Vehicle {
     }
     var color:String{
         get{return _color}
+        set{ _color = newValue }
     }
     var category:String{
         get{return _category}
+        set{ _category = newValue }
     }
     
     //empty initialization
