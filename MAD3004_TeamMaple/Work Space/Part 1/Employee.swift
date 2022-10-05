@@ -124,4 +124,17 @@ class Employee {
         self._employeeVehicle = employeeVehicle
     }
     //end of initialisation as per test case
+    
+    
+    func calculateAge(birthYear: Int) -> Int {
+        
+        let currentYear = 2022
+        let age = currentYear - birthYear
+        
+        return age
+    }
+    
+    func printData(_ msg :String = "We have a new employee"){
+        print(msg)
+    }
 }

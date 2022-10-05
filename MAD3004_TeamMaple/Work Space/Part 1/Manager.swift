@@ -19,5 +19,11 @@ class Manager: Employee {
         get { return _nbClients }
         set { _nbClients = newValue }
     }
+    
+    func printMessage() {
+        printData("We have a new employee: \(name), a manager.")
+//        print("We have a new employee: \(name), a manager");
+    }
+
 
 }
