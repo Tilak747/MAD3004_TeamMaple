@@ -13,12 +13,14 @@ class Vehicle {
     private var _color: String = "";
     private var _category: String = "";
 
-    //getters for vehicle
+    //defining setter & getter
     var make:String{
         get{return _make}
+        set{ _make = newValue }
     }
     var plate:String{
         get{return _plate}
+        set{ _plate = newValue }
     }
     var color:String{
         get{return _color}
