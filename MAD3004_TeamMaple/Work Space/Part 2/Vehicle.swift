@@ -34,5 +34,12 @@ class Vehicle {
         self._color = ""
         self._category = ""
     }
+    //initialisation as per test case
+    init(_make: String, _plate: String, _color: String, _category: String) {
+        self._make = _make
+        self._plate = _plate
+        self._color = _color
+        self._category = _category
+    }
 
 }
