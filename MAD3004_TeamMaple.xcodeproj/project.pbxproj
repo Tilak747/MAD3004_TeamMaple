@@ -16,6 +16,7 @@
 		41C8C24A28EA63CC00EC0D0A /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24928EA63CC00EC0D0A /* Motorcycle.swift */; };
 		41C8C24C28EA63D600EC0D0A /* Temporary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24B28EA63D600EC0D0A /* Temporary.swift */; };
 		41C8C24E28EA63F400EC0D0A /* Permanent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24D28EA63F400EC0D0A /* Permanent.swift */; };
+		99CA035C28EE35A6009BC4F3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA035B28EE35A6009BC4F3 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +43,7 @@
 		41C8C24928EA63CC00EC0D0A /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		41C8C24B28EA63D600EC0D0A /* Temporary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary.swift; sourceTree = "<group>"; };
 		41C8C24D28EA63F400EC0D0A /* Permanent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permanent.swift; sourceTree = "<group>"; };
+		99CA035B28EE35A6009BC4F3 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		41C8C23928EA612A00EC0D0A /* Part 1 */ = {
 			isa = PBXGroup;
 			children = (
+				99CA035B28EE35A6009BC4F3 /* DateExtension.swift */,
 				41C8C23D28EA62D400EC0D0A /* Employee.swift */,
 				41C8C24128EA639500EC0D0A /* Tester.swift */,
 				41C8C24328EA63A400EC0D0A /* Manager.swift */,
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C8C24228EA639500EC0D0A /* Tester.swift in Sources */,
+				99CA035C28EE35A6009BC4F3 /* DateExtension.swift in Sources */,
 				41C8C24628EA63B000EC0D0A /* Programmer.swift in Sources */,
 				41C8C24828EA63BA00EC0D0A /* Car.swift in Sources */,
 				41C8C24028EA62F400EC0D0A /* Vehicle.swift in Sources */,
