@@ -52,4 +52,76 @@ class Employee {
     var employeeVehicle: Vehicle {
         get { return _employeeVehicle }
     }
+    
+    //empty initialization
+    init(){
+        self._name = ""
+        self._birthYear = 2000
+        self._age = 0
+        self._monthlyIncome = 0;
+        self._rate = 0;
+        self._employeeVehicle = Car()
+    }
+
+    //initialisation as per test case
+    init(name: String) {
+        self._name = name;
+        self._birthYear = 0;
+        self._age = 0
+        self._monthlyIncome = 0;
+        self._rate = 0;
+        self._employeeVehicle = Car()
+    }
+    
+    init(name: String,birthYear:Int) {
+        self._name = name;
+        self._birthYear = birthYear;
+        self._age = 0
+        self._monthlyIncome = 0;
+        self._rate = 0;
+        self._employeeVehicle = Car()
+    }
+    
+    init(name: String,birthYear:Int,rate: Int) {
+        self._name = name;
+        self._birthYear = birthYear;
+        self._age = 0
+        self._monthlyIncome = 0;
+        if(rate < 10) {
+            self._rate = 10
+        }
+        else if (rate > 100){
+            self._rate = 100
+        }
+        else {
+            self._rate = rate
+        }
+        self._employeeVehicle = Car()
+    }
+    
+    init(name: String,birthYear:Int,employeeVehicle: Vehicle) {
+        self._name = name;
+        self._birthYear = birthYear;
+        self._age = 0
+        self._monthlyIncome = 0;
+        self._employeeVehicle = employeeVehicle
+    }
+    
+    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle) {
+        self._name = name;
+        self._birthYear = birthYear;
+        self._age = 0
+        self._monthlyIncome = 0;
+        if(rate < 10) {
+            self._rate = 10
+        }
+        else if (rate > 100){
+            self._rate = 100
+        }
+        else {
+            self._rate = rate
+        }
+        self._employeeVehicle = employeeVehicle
+    }
+    //end of initialisation as per test case
 }
