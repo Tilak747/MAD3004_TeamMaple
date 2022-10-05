@@ -17,5 +17,4 @@ class Tester: Employee {
         printData("We have a new employee: \(name), a tester")
 //        print("We have a new employee: \(name), a tester");
     }
-    
 }

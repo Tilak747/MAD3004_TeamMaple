@@ -18,4 +18,10 @@ class Programmer: Employee {
             print("We have a new employee: \(name), a programmer");
         }
 
+    init(name: String, birthYear: Int,nbProjects: Int) {
+            super.init(name: name, birthYear: birthYear)
+            self._nbProjects = nbProjects;
+            printMessage()
+        }
+
 }
