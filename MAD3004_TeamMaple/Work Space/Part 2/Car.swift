@@ -6,6 +6,7 @@
 import Foundation
 
 class Car: Vehicle {
+    //defining variable
     private var _gear:String = "";
     private var _type:String = "";
 
