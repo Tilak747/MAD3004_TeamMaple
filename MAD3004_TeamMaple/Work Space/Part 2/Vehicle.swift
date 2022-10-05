@@ -26,5 +26,13 @@ class Vehicle {
     var category:String{
         get{return _category}
     }
+    
+    //empty initialization
+    init(){
+        self._make = ""
+        self._plate = ""
+        self._color = ""
+        self._category = ""
+    }
 
 }
