@@ -8,7 +8,7 @@ import Foundation
 class Tester: Employee {
     private var _nbBugs: Int=0;
     
-    private let _GainFactorError = 500
+    private let _GainFactorError = 10
     
     var nbBugs: Int {
             get { return _nbBugs }

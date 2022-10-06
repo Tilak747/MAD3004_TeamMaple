@@ -9,6 +9,8 @@ class Programmer: Employee {
 
     private var _nbProjects: Int=0;
 
+    private let _GainFactorProjjects = 200
+    
     var nbProjects: Int {
             get { return _nbProjects }
             set { _nbProjects = newValue }
@@ -41,5 +43,11 @@ class Programmer: Employee {
         self._nbProjects = nbProjects;
         printMessage()
     }
+    
+    override func annualIncome() -> Double {
+        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        var bonus = Double(_GainFactorProjjects * nbProjects)
+        return baseYearlyIncome + bonus
+     }
 
 }
