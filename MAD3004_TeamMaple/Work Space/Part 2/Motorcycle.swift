@@ -19,4 +19,14 @@ class Motorcycle: Vehicle {
         super.init(_make:String,_plate:String,_color:String ,_category:String ,_sidecar:Bool)
         self._sidecar=sidecar
     }
+
+    var sidecar:Bool{
+        get{return _sidecar}
+        set{_sidecar=newValue}
+
+    }
+    override init(){
+        super.init()
+        self._sidecar=false
+    }
 }
