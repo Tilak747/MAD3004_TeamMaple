@@ -28,6 +28,15 @@ class Car: Vehicle {
         self._gear = ""
         self._type = ""
     }
-   
+   //getter and setter methods
+   var gear:String{
+        get{return _gear}
+        set{_gear = newValue}
+    }
+    var type:String{
+        get{return _type}
+        set{_type = newValue}
+    }
+
 
 }
