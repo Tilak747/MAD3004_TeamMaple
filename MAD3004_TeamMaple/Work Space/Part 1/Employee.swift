@@ -137,4 +137,9 @@ class Employee {
     func printData(_ msg :String = "We have a new employee"){
         print(msg)
     }
+    
+    func annualIncome() -> Double {
+         var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+         return baseYearlyIncome
+     }
 }
