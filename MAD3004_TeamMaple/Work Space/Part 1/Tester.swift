@@ -8,6 +8,8 @@ import Foundation
 class Tester: Employee {
     private var _nbBugs: Int=0;
     
+    private let _GainFactorError = 500
+    
     var nbBugs: Int {
             get { return _nbBugs }
             set { _nbBugs = newValue }
@@ -29,4 +31,10 @@ class Tester: Employee {
         self.nbBugs = nbBugs;
         printMessage()
     }
+    
+    override func annualIncome() -> Double {
+        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        var bonus = Double(_GainFactorError * nbBugs)
+        return baseYearlyIncome + bonus
+     }
 }
