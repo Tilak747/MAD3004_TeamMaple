@@ -10,6 +10,9 @@ class Manager: Employee {
     private var _nbTravelDays: Int=0;
     private var _nbClients : Int=0;
     
+    private let _GainFactorClient = 500
+    private let _GainFactorTravel = 100
+    
     var nbTravelDays: Int {
         get { return _nbTravelDays }
         set { _nbTravelDays = newValue }
@@ -53,5 +56,11 @@ class Manager: Employee {
 //        print("We have a new employee: \(name), a manager");
     }
 
-
+    override func annualIncome() -> Double {
+        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        var clientBonus = Double(_GainFactorClient * nbClients)
+        var expenditure = Double(_GainFactorTravel * nbTravelDays)
+        return baseYearlyIncome + clientBonus + expenditure
+     }
+    
 }
