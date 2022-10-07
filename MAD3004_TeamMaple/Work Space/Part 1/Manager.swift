@@ -72,6 +72,11 @@ extension Manager {
         Name: \(name), a Manager \n
         """
         
-        return a + super.description
+        let b = """
+        He/She travelled \(nbTravelDays) days and
+        has brought \(nbClients) new clients.
+        His/Her estimated annual income is
+        """
+        return a + super.description + b
     }
 }

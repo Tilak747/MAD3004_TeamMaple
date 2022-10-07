@@ -59,6 +59,11 @@ extension Programmer {
         Name: \(name), a Programmer \n
         """
         
-        return a + super.description
+        let b = """
+        and completed \(nbProjects) projects.
+        His/Her estimated annual income is
+        """
+        return a + super.description + b
     }
 }
+

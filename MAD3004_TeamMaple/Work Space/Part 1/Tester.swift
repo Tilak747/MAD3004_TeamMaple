@@ -45,7 +45,11 @@ extension Tester {
         Name: \(name), a Tester \n
         """
         
-        return a + super.description
+        let b = """
+        and corrected \(nbBugs) bugs.
+        His/Her estimated annual income is
+        """
+        return a + super.description + b
     }
 }
 
