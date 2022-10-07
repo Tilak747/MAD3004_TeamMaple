@@ -5,6 +5,6 @@
 
 import Foundation
 
-class Temporary {
+class Temporary:Contract {
     
 }

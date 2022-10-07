@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416D882F28F0AECC006908DD /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416D882E28F0AECC006908DD /* Contract.swift */; };
 		41C8C23E28EA62D400EC0D0A /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C23D28EA62D400EC0D0A /* Employee.swift */; };
 		41C8C24028EA62F400EC0D0A /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C23F28EA62F400EC0D0A /* Vehicle.swift */; };
 		41C8C24228EA639500EC0D0A /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24128EA639500EC0D0A /* Tester.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		4124ED6B28EA414B00E11E46 /* MAD3004_TeamMaple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004_TeamMaple; sourceTree = BUILT_PRODUCTS_DIR; };
+		416D882E28F0AECC006908DD /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		41C8C23728EA60EC00EC0D0A /* Test Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Test Files"; sourceTree = "<group>"; };
 		41C8C23D28EA62D400EC0D0A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		41C8C23F28EA62F400EC0D0A /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				41C8C24B28EA63D600EC0D0A /* Temporary.swift */,
 				41C8C24D28EA63F400EC0D0A /* Permanent.swift */,
+				416D882E28F0AECC006908DD /* Contract.swift */,
 			);
 			path = "Part 3";
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				41C8C24828EA63BA00EC0D0A /* Car.swift in Sources */,
 				41C8C24028EA62F400EC0D0A /* Vehicle.swift in Sources */,
 				41C8C23E28EA62D400EC0D0A /* Employee.swift in Sources */,
+				416D882F28F0AECC006908DD /* Contract.swift in Sources */,
 				41C8C24C28EA63D600EC0D0A /* Temporary.swift in Sources */,
 				41C8C24428EA63A400EC0D0A /* Manager.swift in Sources */,
 				41C8C24A28EA63CC00EC0D0A /* Motorcycle.swift in Sources */,
