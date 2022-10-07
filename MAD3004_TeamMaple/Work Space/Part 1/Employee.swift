@@ -143,3 +143,31 @@ class Employee {
         return baseYearlyIncome
      }
 }
+
+//MARK: - Employee Extension
+extension Employee : CustomStringConvertible {
+    @objc var description: String {
+        /**
+         Name: Serge, a Manager
+         Age: 33
+         Employee has a car
+              - make: Lamborghini
+              - plate: Custom Plate
+              - color: White
+              - category: Family
+              - gear type: Manual
+              - type: Sport
+         Serge has an Occupation rate: 100% He/She travelled 4 days and
+         has brought 30 new clients.
+         His/Her estimated annual income is 15400.0
+         */
+        let a =
+        """
+        Age: \(age)
+        \(employeeVehicle)
+        """
+        
+        return a
+    }
+}
+
