@@ -38,3 +38,15 @@ class Tester: Employee {
         return baseYearlyIncome + bonus
      }
 }
+
+extension Tester {
+    override var description: String {
+        let a =
+        """
+        Name: \(name), a Tester \n
+        """
+        
+        return a + super.description
+    }
+}
+
