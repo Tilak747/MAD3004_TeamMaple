@@ -82,7 +82,13 @@ class Employee {
     func annualIncome() -> Double {
         var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
         return baseYearlyIncome
-     }
+    }
+    
+    private  var _contract : Contract?
+    var contract: Contract? {
+        get { return _contract ?? Contract() }
+        set { _contract = newValue }
+    }
 }
 
 //MARK: - Employee Extension
