@@ -64,3 +64,14 @@ class Manager: Employee {
      }
     
 }
+
+extension Manager {
+    override var description: String {
+        let a =
+        """
+        Name: \(name), a Manager \n
+        """
+        
+        return a + super.description
+    }
+}
