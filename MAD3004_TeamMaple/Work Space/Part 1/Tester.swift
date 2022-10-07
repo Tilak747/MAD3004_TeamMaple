@@ -6,7 +6,7 @@
 import Foundation
 
 class Tester: Employee {
-    private var _nbBugs: Int=0;
+    private var _nbBugs: Int=0
     
     private let _GainFactorError = 10
     
@@ -17,7 +17,6 @@ class Tester: Employee {
 
     func printMessage() {
         printData("We have a new employee: \(name), a tester")
-//        print("We have a new employee: \(name), a tester");
     }
     
     init(name: String, birthYear: Int,nbBugs: Int,rate:Int) {
@@ -26,7 +25,7 @@ class Tester: Employee {
         printMessage()
     }
     
-    init(name: String, birthYear: Int,nbBugs: Int,rate:Int, employeeVehicle: Vehicle) {
+    init(name: String, birthYear: Int,nbBugs: Int,rate:Int=100, employeeVehicle: Vehicle?=nil) {
         super.init(name: name, birthYear: birthYear, rate: rate,employeeVehicle: employeeVehicle)
         self.nbBugs = nbBugs;
         printMessage()

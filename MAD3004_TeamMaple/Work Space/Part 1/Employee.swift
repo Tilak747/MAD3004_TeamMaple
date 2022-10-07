@@ -10,10 +10,10 @@ class Employee {
     //necessary variables
     private var _name : String
     private var _birthYear : Int
-    private var _age : Int;
+    private var _age : Int
     private var _monthlyIncome : Double
-    private var _rate : Int = 100;
-    private var _employeeVehicle : Vehicle;
+    private var _rate : Int = 100
+    private var _employeeVehicle : Vehicle?
     
     //defining setter & getter
     var name: String {
@@ -39,9 +39,9 @@ class Employee {
     var rate: Int {
         get {
             if(self.rate < 10){
-                return 10;
+                return 10
             }else if(self.rate > 100){
-                return 100;
+                return 100
             }
             return _rate
         }
@@ -49,7 +49,7 @@ class Employee {
     }
     
     
-    var employeeVehicle: Vehicle {
+    var employeeVehicle: Vehicle? {
         get { return _employeeVehicle }
     }
     
@@ -107,7 +107,7 @@ class Employee {
         self._employeeVehicle = employeeVehicle
     }
     
-    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle) {
+    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle? = nil) {
         self._name = name;
         self._birthYear = birthYear;
         self._age = 0
@@ -121,20 +121,25 @@ class Employee {
         else {
             self._rate = rate
         }
-        self._employeeVehicle = employeeVehicle
+        if let employeeVehicle = employeeVehicle {
+            self._employeeVehicle = employeeVehicle
+        }
     }
     //end of initialisation as per test case
     
     
     func calculateAge(birthYear: Int) -> Int {
         
-        let currentYear = 2022
-        let age = currentYear - birthYear
+        if birthYear > 0 {
+            let date = Date()
+            let currentYear = Calendar.current.component(.year, from: date)
+            return currentYear - birthYear
+        }
         
-        return age
+        return 0
     }
     
-    func printData(_ msg :String = "We have a new employee"){
+    func printData(_ msg :String){
         print(msg)
     }
     
@@ -147,24 +152,11 @@ class Employee {
 //MARK: - Employee Extension
 extension Employee : CustomStringConvertible {
     @objc var description: String {
-        /**
-         Name: Serge, a Manager
-         Age: 33
-         Employee has a car
-              - make: Lamborghini
-              - plate: Custom Plate
-              - color: White
-              - category: Family
-              - gear type: Manual
-              - type: Sport
-         Serge has an Occupation rate: 100% He/She travelled 4 days and
-         has brought 30 new clients.
-         His/Her estimated annual income is 15400.0
-         */
+
         let a =
         """
         Age: \(age)
-        \(employeeVehicle)
+        \(employeeVehicle ?? Vehicle())
         """
         
         return a

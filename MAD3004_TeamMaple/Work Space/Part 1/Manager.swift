@@ -7,8 +7,8 @@ import Foundation
 
 class Manager: Employee {
     
-    private var _nbTravelDays: Int=0;
-    private var _nbClients : Int=0;
+    private var _nbTravelDays: Int=0
+    private var _nbClients : Int=0
     
     private let _GainFactorClient = 500
     private let _GainFactorTravel = 100
@@ -42,7 +42,7 @@ class Manager: Employee {
         self._nbClients = nbClients;
         printMessage()
     }
-    init(name: String, birthYear: Int,nbClients: Int,nbTravelDays: Int,rate:Int, employeeVehicle: Vehicle) {
+    init(name: String, birthYear: Int,nbClients: Int,nbTravelDays: Int,rate:Int=100, employeeVehicle: Vehicle?=nil) {
         super.init(name: name, birthYear: birthYear,rate: rate,employeeVehicle: employeeVehicle)
         self._nbTravelDays = nbTravelDays;
         self._nbClients = nbClients;

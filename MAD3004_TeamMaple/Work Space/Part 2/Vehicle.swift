@@ -8,10 +8,10 @@ import Foundation
 class Vehicle {
     
     //defining the variables
-    private var _make: String = "";
-    private var _plate: String = "";
-    private var _color: String = "";
-    private var _category: String = "";
+    private var _make: String = ""
+    private var _plate: String = ""
+    private var _color: String = ""
+    private var _category: String = ""
 
     //defining setter & getter
     var make:String{
@@ -51,18 +51,7 @@ class Vehicle {
 //MARK: Vehicle Extension
 extension Vehicle : CustomStringConvertible {
     @objc var description: String {
-        /**
-         Employee has a car
-              - make: Lamborghini
-              - plate: Custom Plate
-              - color: White
-              - category: Family
-              - gear type: Manual
-              - type: Sport
-         */
-        
         let a = """
-        Employee has a car
         \t- make: \(make)
         \t- plate: \(plate)
         \t- colour: \(color)

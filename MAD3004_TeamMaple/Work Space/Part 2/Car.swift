@@ -7,8 +7,8 @@ import Foundation
 
 class Car: Vehicle {
     //defining variable
-    private var _gear:String = "";
-    private var _type:String = "";
+    private var _gear:String = ""
+    private var _type:String = ""
 
     //initialisation
     init(gear:String,type:String ){
@@ -44,10 +44,15 @@ class Car: Vehicle {
 extension Car {
     override var description: String {
         let a = """
+        Employee has a car\n
+        """
+        
+        let b = """
         \n\t- gear type: \(gear)
         \t- type: \(type)
         """
-        return super.description + a
+        
+        return a + super.description + b
     }
 }
 
