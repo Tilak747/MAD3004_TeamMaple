@@ -37,77 +37,15 @@ class Employee {
     }
     
     var rate: Int {
-        get {
-            if(self.rate < 10){
-                return 10
-            }else if(self.rate > 100){
-                return 100
-            }
-            return _rate
-        }
+        get { return _rate }
         set { _rate = newValue }
     }
-    
     
     var employeeVehicle: Vehicle? {
         get { return _employeeVehicle }
     }
     
-    //empty initialization
-    init(){
-        self._name = ""
-        self._birthYear = 2000
-        self._age = 0
-        self._monthlyIncome = 0;
-        self._rate = 0;
-        self._employeeVehicle = Car()
-    }
-
-    //initialisation as per test case
-    init(name: String) {
-        self._name = name;
-        self._birthYear = 0;
-        self._age = 0
-        self._monthlyIncome = 0;
-        self._rate = 0;
-        self._employeeVehicle = Car()
-    }
-    
-    init(name: String,birthYear:Int) {
-        self._name = name;
-        self._birthYear = birthYear;
-        self._age = 0
-        self._monthlyIncome = 0;
-        self._rate = 0;
-        self._employeeVehicle = Car()
-    }
-    
-    init(name: String,birthYear:Int,rate: Int) {
-        self._name = name;
-        self._birthYear = birthYear;
-        self._age = 0
-        self._monthlyIncome = 0;
-        if(rate < 10) {
-            self._rate = 10
-        }
-        else if (rate > 100){
-            self._rate = 100
-        }
-        else {
-            self._rate = rate
-        }
-        self._employeeVehicle = Car()
-    }
-    
-    init(name: String,birthYear:Int,employeeVehicle: Vehicle) {
-        self._name = name;
-        self._birthYear = birthYear;
-        self._age = 0
-        self._monthlyIncome = 0;
-        self._employeeVehicle = employeeVehicle
-    }
-    
-    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle? = nil) {
+    init(name: String,birthYear:Int,rate: Int = 100,employeeVehicle: Vehicle? = nil) {
         self._name = name;
         self._birthYear = birthYear;
         self._age = 0
@@ -125,8 +63,6 @@ class Employee {
             self._employeeVehicle = employeeVehicle
         }
     }
-    //end of initialisation as per test case
-    
     
     func calculateAge(birthYear: Int) -> Int {
         
@@ -152,11 +88,11 @@ class Employee {
 //MARK: - Employee Extension
 extension Employee : CustomStringConvertible {
     @objc var description: String {
-
         let a =
         """
         Age: \(age)
         \(employeeVehicle ?? Vehicle())
+        \(name) has an Occupation rate: \(rate)%
         """
         
         return a
