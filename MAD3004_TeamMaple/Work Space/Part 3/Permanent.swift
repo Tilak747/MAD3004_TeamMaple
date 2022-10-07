@@ -59,7 +59,7 @@ class Permanent:Contract {
 
     override var description: String {
         let a = """
-        he \(married ? "is" : "is not") married and he/she has \(nbChildren)children.
+        he \(married ? "is" : "is not") married and he/she has \(nbChildren) children.
         He/She has worked for \(accumulatedDays) days and upon contract his/her monthly salary is \(monthlySalary).
         """
         return super.description + a
