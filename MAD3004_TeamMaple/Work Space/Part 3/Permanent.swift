@@ -38,21 +38,22 @@ class Permanent:Contract {
         set { _accumulatedDays = newValue }
     }
     
-    override init(name:String,birthYear:Int,rate:Int=100,employeeVehicles:Vehicle=nil){
-        super.init(name:name,birthYear:birthYear)
-        self._nbChildren=nbChildren
-        self._married=married
-        self._monthlySalary=monthlySalary
-        self._bonusPerChildPerMonth=bonusPerChildPerMonth
-        self.accumulatedDays=accumulatedDays
+    init(nbChildren: Int, married: Bool, monthlySalary: Int, bonusPerChildPerMonth: Int, accumulatedDays: Int) {
+        self._nbChildren = nbChildren
+        self._married = married
+        self._monthlySalary = monthlySalary
+        self._bonusPerChildPerMonth = bonusPerChildPerMonth
+        self._accumulatedDays = accumulatedDays
     }
-
-    init(nbChildren:Int,married:Bool,monthlySalary:Int,bonusPerChildPerMonth:Int,accumulatedDays:Int){
-        super.init(name:"",birthYear:0)
-        self._nbChildren=nbChildren
-        self._married=married
-        self.monthlySalary=monthlySalary
-        self._bonusPerChildPerMonth=bonusPerChildPerMonth
-        self._accumulatedDays=accumulatedDays
+    
+    func accumulatedSalary() -> Int {
+        var childBonus = 0
+        var cumulativeSalary = 0
+        if (married && nbChildren > 0){
+            childBonus = bonusPerChildPerMonth * nbChildren
+        }
+        let salary = monthlySalary + childBonus
+        cumulativeSalary = (salary / 20) * accumulatedDays
+        return cumulativeSalary
     }
 }
