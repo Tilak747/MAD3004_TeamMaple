@@ -28,6 +28,14 @@ class Temporary:Contract {
     func accumulatedSalary() -> Int {
         let salary = hourlySalary * accumulatedHours
         return salary
-    }    
+    }   
+
+    override var description: String {
+        let a = """
+        he is a temporary employee with \(hourlySalary) hourly salary and he has worked for \(accumulatedHours) hours
+        """
+        return super.description + a
+    }
+ 
 }
 
