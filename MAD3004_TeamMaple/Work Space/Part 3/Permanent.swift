@@ -37,5 +37,13 @@ class Permanent:Contract {
         get { return _accumulatedDays }
         set { _accumulatedDays = newValue }
     }
-
+    
+    override init(name:String,birthYear:Int,rate:Int=100,employeeVehicles:Vehicle=nil){
+        super.init(name:name,birthYear:birthYear)
+        self._nbChildren=nbChildren
+        self._married=married
+        self._monthlySalary=monthlySalary
+        self._bonusPerChildPerMonth=bonusPerChildPerMonth
+        self.accumulatedDays=accumulatedDays
+    }
 }
