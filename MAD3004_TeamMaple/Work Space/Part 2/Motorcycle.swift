@@ -12,11 +12,11 @@ class Motorcycle: Vehicle {
     //initialisations
     init(sidecar:Bool){
         super.init()
-        self _sidecar = sidecar 
+        self._sidecar = sidecar
     }
     init(make:String, plate:String, color:String ,category:String ,sidecar:Bool){
 
-        super.init(_make:String,_plate:String,_color:String ,_category:String ,_sidecar:Bool)
+        super.init(_make:make,_plate:plate,_color:color ,_category:category)
         self._sidecar=sidecar
     }
 
@@ -30,3 +30,13 @@ class Motorcycle: Vehicle {
         self._sidecar=false
     }
 }
+
+extension Motorcycle {
+    override var description: String {
+        let a = """
+        \n\t- \(sidecar ? "with" : "without") sidecar
+        """
+        return super.description + a
+    }
+}
+
