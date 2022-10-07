@@ -9,7 +9,7 @@ class Permanent:Contract {
     
     private var _nbChildren: Int = 0
     private var _married: Bool = false
-    private var _monthlySalary: Int = 0
+    private var _monthlySalary: Double = 0.0
     private var _bonusPerChildPerMonth: Int = 0
     private var _accumulatedDays: Int = 0
     
@@ -23,7 +23,7 @@ class Permanent:Contract {
         set { _married = newValue }
     }
     
-    var monthlySalary: Int {
+    var monthlySalary: Double {
         get { return _monthlySalary }
         set { _monthlySalary = newValue }
     }
@@ -38,7 +38,7 @@ class Permanent:Contract {
         set { _accumulatedDays = newValue }
     }
     
-    init(nbChildren: Int, married: Bool, monthlySalary: Int, bonusPerChildPerMonth: Int, accumulatedDays: Int) {
+    init(nbChildren: Int, married: Bool, monthlySalary: Double, bonusPerChildPerMonth: Int, accumulatedDays: Int) {
         self._nbChildren = nbChildren
         self._married = married
         self._monthlySalary = monthlySalary
@@ -46,14 +46,14 @@ class Permanent:Contract {
         self._accumulatedDays = accumulatedDays
     }
     
-    override func accumulatedSalary() -> Int {
+    override func accumulatedSalary() -> Double {
         var childBonus = 0
-        var cumulativeSalary = 0
+        var cumulativeSalary = 0.0
         if (married && nbChildren > 0){
             childBonus = bonusPerChildPerMonth * nbChildren
         }
-        let salary = monthlySalary + childBonus
-        cumulativeSalary = (salary / 20) * accumulatedDays
+        let salary = monthlySalary + Double(childBonus)
+        cumulativeSalary = (salary / 20) * Double(accumulatedDays)
         return cumulativeSalary
     }
 

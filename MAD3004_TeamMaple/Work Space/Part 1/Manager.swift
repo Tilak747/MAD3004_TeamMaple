@@ -57,9 +57,9 @@ class Manager: Employee {
     }
 
     override func annualIncome() -> Double {
-        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate/100)
-        var clientBonus = Double(_GainFactorClient * nbClients)
-        var expenditure = Double(_GainFactorTravel * nbTravelDays)
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)/100
+        let clientBonus = Double(_GainFactorClient * nbClients)
+        let expenditure = Double(_GainFactorTravel * nbTravelDays)
         return baseYearlyIncome + clientBonus + expenditure
      }
     
@@ -75,7 +75,7 @@ extension Manager {
         let b = """
         He/She travelled \(nbTravelDays) days and
         has brought \(nbClients) new clients.
-        His/Her estimated annual income is \(annualIncome)
+        His/Her estimated annual income is \(String(describing: annualIncome))
         """
         return a + super.description + b
     }

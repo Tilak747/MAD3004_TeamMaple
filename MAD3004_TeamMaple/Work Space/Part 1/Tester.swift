@@ -32,8 +32,8 @@ class Tester: Employee {
     }
     
     override func annualIncome() -> Double {
-        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate/100)
-        var bonus = Double(_GainFactorError * nbBugs)
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)/100
+        let bonus = Double(_GainFactorError * nbBugs)
         return baseYearlyIncome + bonus
      }
 }
@@ -47,7 +47,7 @@ extension Tester {
         
         let b = """
         and corrected \(nbBugs) bugs.
-        His/Her estimated annual income is \(annualIncome)
+        His/Her estimated annual income is \(String(describing: annualIncome))
         """
         return a + super.description + b
     }

@@ -45,8 +45,8 @@ class Programmer: Employee {
     }
     
     override func annualIncome() -> Double {
-        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate/100)
-        var bonus = Double(_GainFactorProjjects * nbProjects)
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)/100
+        let bonus = Double(_GainFactorProjjects * nbProjects)
         return baseYearlyIncome + bonus
      }
 
@@ -61,7 +61,7 @@ extension Programmer {
         
         let b = """
         and completed \(nbProjects) projects.
-        His/Her estimated annual income is \(annualIncome)
+        His/Her estimated annual income is \(String(describing: annualIncome))
         """
         return a + super.description + b
     }
