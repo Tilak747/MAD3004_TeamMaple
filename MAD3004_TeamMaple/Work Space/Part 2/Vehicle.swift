@@ -12,7 +12,7 @@ class Vehicle {
     private var _plate: String = ""
     private var _color: String = ""
     private var _category: String = ""
-
+    
     //defining setter & getter
     var make:String{
         get{return _make}
@@ -38,6 +38,7 @@ class Vehicle {
         self._color = ""
         self._category = ""
     }
+    
     //initialisation as per test case
     init(_make: String, _plate: String, _color: String, _category: String) {
         self._make = _make
@@ -45,7 +46,7 @@ class Vehicle {
         self._color = _color
         self._category = _category
     }
-
+    
 }
 
 //MARK: Vehicle Extension
@@ -60,4 +61,4 @@ extension Vehicle : CustomStringConvertible {
         return a
     }
 }
- 
+

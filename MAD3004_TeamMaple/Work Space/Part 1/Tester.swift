@@ -6,23 +6,17 @@
 import Foundation
 
 class Tester: Employee {
-    private var _nbBugs: Int=0
     
+    private var _nbBugs: Int=0
     private let _GainFactorError = 10
     
     var nbBugs: Int {
-            get { return _nbBugs }
-            set { _nbBugs = newValue }
-        }
-
-    func printMessage() {
-        printData("We have a new employee: \(name), a tester")
+        get { return _nbBugs }
+        set { _nbBugs = newValue }
     }
     
-    init(name: String, birthYear: Int,nbBugs: Int,rate:Int) {
-        super.init(name: name, birthYear: birthYear, rate: rate)
-        self._nbBugs = nbBugs;
-        printMessage()
+    func printMessage() {
+        printData("We have a new employee: \(name), a tester")
     }
     
     init(name: String, birthYear: Int,nbBugs: Int,rate:Int=100, employeeVehicle: Vehicle?=nil) {
@@ -35,7 +29,7 @@ class Tester: Employee {
         let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)/100
         let bonus = Double(_GainFactorError * nbBugs)
         return baseYearlyIncome + bonus
-     }
+    }
 }
 
 extension Tester {

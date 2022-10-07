@@ -11,20 +11,19 @@ class Contract: CustomStringConvertible {
     var description: String {
         return ""
     }
-        
+    
     func accumulatedSalary() -> Double {
         return 0.0
     }
-     
 }
 
 protocol EmployeeContract {
     var contract : Contract? { get set }
- 
+    
     func signContract(contract : Contract)
     func contractInfo() -> String
 }
- 
+
 extension Employee : EmployeeContract {
     func signContract(contract: Contract) {
         monthlyIncome = contract.accumulatedSalary()

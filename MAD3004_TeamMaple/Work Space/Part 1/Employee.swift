@@ -69,9 +69,9 @@ class Employee {
          !!! althoought its the correct way to calculat age !!!
          
          if birthYear > 0 {
-             let date = Date()
-             let currentYear = Calendar.current.component(.year, from: date)
-             return currentYear - birthYear
+         let date = Date()
+         let currentYear = Calendar.current.component(.year, from: date)
+         return currentYear - birthYear
          }
          
          return 0
