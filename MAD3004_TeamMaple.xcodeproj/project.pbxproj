@@ -17,6 +17,8 @@
 		41C8C24A28EA63CC00EC0D0A /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24928EA63CC00EC0D0A /* Motorcycle.swift */; };
 		41C8C24C28EA63D600EC0D0A /* Temporary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24B28EA63D600EC0D0A /* Temporary.swift */; };
 		41C8C24E28EA63F400EC0D0A /* Permanent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C8C24D28EA63F400EC0D0A /* Permanent.swift */; };
+		99A4D18028F0C56D00AC5D2D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4D17F28F0C56D00AC5D2D /* main.swift */; };
+		99A4D18228F0C57D00AC5D2D /* management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A4D18128F0C57D00AC5D2D /* management.swift */; };
 		99CA035C28EE35A6009BC4F3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CA035B28EE35A6009BC4F3 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +37,6 @@
 /* Begin PBXFileReference section */
 		4124ED6B28EA414B00E11E46 /* MAD3004_TeamMaple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MAD3004_TeamMaple; sourceTree = BUILT_PRODUCTS_DIR; };
 		416D882E28F0AECC006908DD /* Contract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
-		41C8C23728EA60EC00EC0D0A /* Test Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Test Files"; sourceTree = "<group>"; };
 		41C8C23D28EA62D400EC0D0A /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		41C8C23F28EA62F400EC0D0A /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		41C8C24128EA639500EC0D0A /* Tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
@@ -45,6 +46,8 @@
 		41C8C24928EA63CC00EC0D0A /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		41C8C24B28EA63D600EC0D0A /* Temporary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary.swift; sourceTree = "<group>"; };
 		41C8C24D28EA63F400EC0D0A /* Permanent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permanent.swift; sourceTree = "<group>"; };
+		99A4D17F28F0C56D00AC5D2D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99A4D18128F0C57D00AC5D2D /* management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = management.swift; sourceTree = "<group>"; };
 		99CA035B28EE35A6009BC4F3 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,8 +81,8 @@
 		4124ED6D28EA414B00E11E46 /* MAD3004_TeamMaple */ = {
 			isa = PBXGroup;
 			children = (
+				99A4D17E28F0C55D00AC5D2D /* Test Files */,
 				41C8C23828EA611D00EC0D0A /* Work Space */,
-				41C8C23728EA60EC00EC0D0A /* Test Files */,
 			);
 			path = MAD3004_TeamMaple;
 			sourceTree = "<group>";
@@ -124,6 +127,15 @@
 				416D882E28F0AECC006908DD /* Contract.swift */,
 			);
 			path = "Part 3";
+			sourceTree = "<group>";
+		};
+		99A4D17E28F0C55D00AC5D2D /* Test Files */ = {
+			isa = PBXGroup;
+			children = (
+				99A4D17F28F0C56D00AC5D2D /* main.swift */,
+				99A4D18128F0C57D00AC5D2D /* management.swift */,
+			);
+			path = "Test Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +199,9 @@
 			files = (
 				41C8C24228EA639500EC0D0A /* Tester.swift in Sources */,
 				99CA035C28EE35A6009BC4F3 /* DateExtension.swift in Sources */,
+				99A4D18028F0C56D00AC5D2D /* main.swift in Sources */,
 				41C8C24628EA63B000EC0D0A /* Programmer.swift in Sources */,
+				99A4D18228F0C57D00AC5D2D /* management.swift in Sources */,
 				41C8C24828EA63BA00EC0D0A /* Car.swift in Sources */,
 				41C8C24028EA62F400EC0D0A /* Vehicle.swift in Sources */,
 				41C8C23E28EA62D400EC0D0A /* Employee.swift in Sources */,
