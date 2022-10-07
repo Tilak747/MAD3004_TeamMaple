@@ -7,8 +7,10 @@
 
 import Foundation
 
-class Contract {
-
+class Contract: CustomStringConvertible {
+    var description: String {
+        return ""
+    }
 }
 
 protocol EmployeeContract {
