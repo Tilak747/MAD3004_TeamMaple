@@ -20,9 +20,9 @@ class Temporary:Contract {
         set{_accumulatedHours=newValue}
     }
 
-    init(_hourlySalary:Int,_accumulatedHours:Int){
-        self._hourlySalary=_hourlySalary
-        self._accumulatedHours=_accumulatedHours
+    init(hourlySalary:Int, accumulatedHours:Int){
+        self._hourlySalary = hourlySalary
+        self._accumulatedHours = accumulatedHours
     }
     
     override func accumulatedSalary() -> Double {
