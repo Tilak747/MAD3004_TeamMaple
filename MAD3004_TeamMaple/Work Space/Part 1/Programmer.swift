@@ -45,7 +45,7 @@ class Programmer: Employee {
     }
     
     override func annualIncome() -> Double {
-        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        var baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate/100)
         var bonus = Double(_GainFactorProjjects * nbProjects)
         return baseYearlyIncome + bonus
      }

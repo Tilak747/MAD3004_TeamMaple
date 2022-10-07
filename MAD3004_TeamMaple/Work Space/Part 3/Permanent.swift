@@ -46,7 +46,7 @@ class Permanent:Contract {
         self._accumulatedDays = accumulatedDays
     }
     
-    func accumulatedSalary() -> Int {
+    override func accumulatedSalary() -> Int {
         var childBonus = 0
         var cumulativeSalary = 0
         if (married && nbChildren > 0){
@@ -60,7 +60,7 @@ class Permanent:Contract {
     override var description: String {
         let a = """
         he \(married ? "is" : "is not") married and he/she has \(nbChildren)children.
-        He/She has worked for \(accumulatedDays) days and upon contract his/her monthly salary is \(accumulatedSalary()).
+        He/She has worked for \(accumulatedDays) days and upon contract his/her monthly salary is \(monthlySalary).
         """
         return super.description + a
     }
