@@ -60,8 +60,8 @@ extension Programmer {
         """
         
         let b = """
-        and completed \(nbProjects) projects.
-        His/Her estimated annual income is \(String(describing: annualIncome))
+         and completed \(nbProjects) projects.
+        His/Her estimated annual income is \(annualIncome())
         """
         return a + super.description + b
     }
