@@ -51,3 +51,14 @@ class Programmer: Employee {
      }
 
 }
+
+extension Programmer {
+    override var description: String {
+        let a =
+        """
+        Name: \(name), a Programmer \n
+        """
+        
+        return a + super.description
+    }
+}
