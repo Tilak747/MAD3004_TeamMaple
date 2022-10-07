@@ -75,7 +75,7 @@ extension Manager {
         let b = """
         He/She travelled \(nbTravelDays) days and
         has brought \(nbClients) new clients.
-        His/Her estimated annual income is
+        His/Her estimated annual income is \(annualIncome)
         """
         return a + super.description + b
     }
