@@ -15,17 +15,25 @@ class Contract: CustomStringConvertible {
 
 protocol EmployeeContract {
     var contract : Contract? { get set }
-
+ 
     func signContract(contract : Contract)
-    func contractInfo() -> Contract?
+    func contractInfo() -> String
 }
-
+ 
 extension Employee : EmployeeContract {
     func signContract(contract: Contract) {
         self.contract = contract
     }
     
-    func contractInfo() -> Contract? {
-        return self.contract ?? nil
+    func contractInfo() -> String {
+        if type(of: self) == Manager.self {
+            return "\(name) is a manager."
+        } else if type(of: self) == Programmer.self {
+            return "\(name) is a programmer."
+        } else if type(of: self) == Tester.self {
+            return "\(name) is a tester."
+        }
+        
+        return "\(name)"
     }
 }
