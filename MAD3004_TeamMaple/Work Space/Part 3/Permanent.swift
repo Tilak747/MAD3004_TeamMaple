@@ -46,4 +46,13 @@ class Permanent:Contract {
         self._bonusPerChildPerMonth=bonusPerChildPerMonth
         self.accumulatedDays=accumulatedDays
     }
+
+    init(nbChildren:Int,married:Bool,monthlySalary:Int,bonusPerChildPerMonth:Int,accumulatedDays:Int){
+        super.init(name:"",birthYear:0)
+        self._nbChildren=nbChildren
+        self._married=married
+        self.monthlySalary=monthlySalary
+        self._bonusPerChildPerMonth=bonusPerChildPerMonth
+        self._accumulatedDays=accumulatedDays
+    }
 }
