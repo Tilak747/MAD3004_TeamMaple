@@ -10,8 +10,29 @@ import Foundation
 class Contract {
 
 }
-extension Employee {
-    func signContract<T>(contract: T) {
-        //do something
+
+protocol EmployeeContract {
+    var contract : Contract? { get set }
+
+    func signContract(contract : Contract)
+    func contractInfo() -> Contract?
+}
+
+extension Employee : EmployeeContract {
+    var contract: Contract? {
+        get {
+           return contract
+        }
+        set {
+            newValue
+        }
+    }
+        
+    func signContract(contract: Contract) {
+        self.contract = contract
+    }
+    
+    func contractInfo() -> Contract? {
+        return self.contract ?? nil
     }
 }
