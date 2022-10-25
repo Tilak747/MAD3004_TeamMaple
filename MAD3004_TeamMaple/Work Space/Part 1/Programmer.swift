@@ -35,16 +35,16 @@ class Programmer: Employee {
 
 extension Programmer {
     override var description: String {
-        let a =
-        """
-        Name: \(name), a Programmer \n
-        """
+//        let a =
+//        """
+//        Name: \(name), a Programmer \n
+//        """
         
         let b = """
          and completed \(nbProjects) projects.
         His/Her estimated annual income is \(annualIncome())
         """
-        return a + super.description + b
+        return super.description + b
     }
 }
 

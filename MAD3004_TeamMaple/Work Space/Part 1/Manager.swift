@@ -44,16 +44,16 @@ class Manager: Employee {
 
 extension Manager {
     override var description: String {
-        let a =
-        """
-        Name: \(name), a Manager \n
-        """
+//        let a =
+//        """
+//        Name: \(name), a Manager \n
+//        """
         
         let b = """
          He/She travelled \(nbTravelDays) days and
         has brought \(nbClients) new clients.
         His/Her estimated annual income is \(annualIncome())
         """
-        return a + super.description + b
+        return super.description + b
     }
 }
